@@ -1,0 +1,247 @@
+/*=====================================
+  CLEARING
+=====================================*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+
+.row,
+.clearfix {
+  zoom: 1;
+}
+
+
+/*=====================================
+  BASE
+=====================================*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url("../imgs/background.jpg") repeat;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  color: #0b85c6;
+}
+
+p {
+  display: block;
+}
+
+/*=====================================
+  NAV
+=====================================*/
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+ul li a {
+  color: #FFF;
+  text-decoration: none;
+  margin: 10px;
+  padding: 4px;
+}
+
+.project-links a:hover,
+.project-links a:focus,
+.project-links a:active {
+  color: orange;
+  background-color: #FFF;
+}
+
+/*=====================================
+  HERO - HEADER
+=====================================*/
+.about {
+  letter-spacing: 1px;
+  margin: 1.5em;
+}
+
+.hero {
+  background: #FFCC00;
+  border-right: 6px solid #fff;
+  height: 100vh;
+  width: 30%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.hero a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/*=====================================
+  HERO - HEADER
+=====================================*/
+.content {
+  width: 70%;
+  padding-left: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.project {
+  cursor: pointer;
+  margin: 1%;
+  background-color: #FFF;
+  border: 4px solid #fff;
+  background-size: cover;
+  width: 40%;
+  float: left;
+  height: 275px;
+  font-size: 1.2em;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.project:hover {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+.project p {
+  position: relative;
+  visibility: hidden;
+  background-color: rgba(255, 165, 0, 0.8);
+  padding-top: 43%;
+  width: 100%;
+  height: 102%;
+  display: block;
+  margin-top: -4px;
+}
+
+.content-text-wrap {
+  background:rgba(255, 165, 0, 0.8);
+  color: #fff;
+  font-size: 1.6em;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #fff;
+}
+
+.content-wrap img{
+  width: 80%;
+}
+
+
+.one {
+  background-image: url('../imgs/img1.jpg');
+}
+
+.two {
+  background-image: url('../imgs/img2.jpg');
+}
+
+.three {
+  background-image: url('../imgs/img3.jpg');
+}
+
+.threea {
+  background-image: url('../imgs/img6.jpg');
+}
+
+.threeb {
+  background-image: url('../imgs/img1b.jpg');
+}
+
+.four {
+  background-image: url('../imgs/img4.png');
+}
+
+.five {
+  background-image: url('../imgs/img5.jpg');
+}
+
+
+@media screen and (max-width: 960px) {
+  .hero {
+    padding: 10px;
+    background: #FFCC00;
+    width: 100%;
+    height: auto;
+    position: static;
+    text-align: center;
+  }
+
+  .project p {
+    padding: 30% 23%;
+  }
+
+  .content {
+    width: 100%;
+    display: block;
+    padding-left: 2px;
+    position: relative;
+  }
+
+  .project {
+    width: 48%;
+  }
+
+  .content p {
+    font-size: .8em;
+  }
+
+
+  li a {
+    font-size: 1.2em;
+  }
+
+}
+
+
+
+
